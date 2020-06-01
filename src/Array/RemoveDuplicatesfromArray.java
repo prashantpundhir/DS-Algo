@@ -1,7 +1,5 @@
 package Array;
 
-import javax.print.attribute.standard.NumberOfDocuments;
-
 public class RemoveDuplicatesfromArray {
 
 	public static void main(String[] args) {
@@ -12,28 +10,27 @@ public class RemoveDuplicatesfromArray {
 
 	}
 
-	public static void removeDuplicatesInSortedArray(int []arr) {
-		
+	public static void removeDuplicatesInSortedArray(int[] arr) {
+
 		int numOfDistinctDigit = 0;
-		
-		for(int i=0;i<arr.length;i++)
-		{
-			if(i==0 || arr[i]!= arr[i-1])
+
+		for (int i = 0; i < arr.length; i++) {
+			if (i == 0 || arr[i] != arr[i - 1])
 				numOfDistinctDigit++;
 		}
-		
-		
-		int []resultArray = new int[numOfDistinctDigit];
-		int resPosition =0;
-		
-		for(int i=0; i<arr.length;i++) {
-			if(i==0 || arr[i]!=arr[i-1]) {
+
+		int[] resultArray = new int[numOfDistinctDigit];
+		int resPosition = 0;
+
+		for (int i = 0; i < arr.length; i++) {
+			if (i == 0 || arr[i] != arr[i - 1]) {
 				resultArray[resPosition] = arr[i];
-			resPosition++;}
+				resPosition++;
+			}
 		}
-		
-		for(int i =0;i<numOfDistinctDigit;i++) {
-			System.out.print(resultArray[i]+ " ");
+
+		for (int i = 0; i < numOfDistinctDigit; i++) {
+			System.out.print(resultArray[i] + " ");
 		}
 	}
 
