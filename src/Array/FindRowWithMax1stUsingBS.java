@@ -17,37 +17,35 @@ public class FindRowWithMax1stUsingBS {
 		int c = n == 0 ? 0 : arr[0].length;
 		int i = 0, j = c - 1, row = 0;
 
-		while(i<n && j>=0) {
-			
-			j=startIndexBS(arr[i], 0, j);
+		while (i < n && j >= 0) {
+
+			j = startIndexBS(arr[i], 0, j);
 			row = i;
 			i++;
-			
-			while(i<n&& arr[i][j]==0)
+
+			while (i < n && arr[i][j] == 0)
 				i++;
-			
+
 		}
-		
+
 		return row;
 	}
 
-	public static int startIndexBS(int arr[],int  begin, int end) {
-		
-		while(begin<end) {
-			int mid = (begin + end)/2;
-			if(arr[mid]==0 && arr[mid+1]==1)
-				return mid+1;
-			if(arr[mid]==0)
-				begin=mid+1;
+	public static int startIndexBS(int arr[], int begin, int end) {
+
+		while (begin < end) {
+			int mid = (begin + end) / 2;
+			if (arr[mid] == 0 && arr[mid + 1] == 1)
+				return mid + 1;
+			if (arr[mid] == 0)
+				begin = mid + 1;
 			else
-				end=mid;
-			
-			
-			
+				end = mid;
+
 		}
-		
+
 		return begin;
-		
+
 	}
 
 }
