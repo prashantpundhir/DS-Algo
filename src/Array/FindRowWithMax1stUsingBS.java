@@ -34,7 +34,11 @@ public class FindRowWithMax1stUsingBS {
 	public static int startIndexBS(int arr[], int begin, int end) {
 
 		while (begin < end) {
-			int mid = (begin + end) / 2;
+			// int mid = (begin + end) / 2;
+			int mid = begin + (end - begin) / 2;
+//			begin + (end - begin )/2;
+			
+
 			if (arr[mid] == 0 && arr[mid + 1] == 1)
 				return mid + 1;
 			if (arr[mid] == 0)

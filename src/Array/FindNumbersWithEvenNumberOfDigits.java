@@ -18,6 +18,7 @@ public class FindNumbersWithEvenNumberOfDigits {
 			int num = arr[i];
 
 			String str = Integer.toString(num);
+			
 			if (str.length() % 2 == 0)
 				count++;
 		}

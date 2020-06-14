@@ -3,9 +3,9 @@ package Array;
 public class ArrayRotateUsingReverse {
 
 	public static void main(String[] args) {
-		int arr[] = { 1, 4, 6, 8, 7, 5, 10 };
+		int arr[] = {-1,-100,3,99};
 		int n = arr.length;
-		int d = 3;
+		int d = 2;
 
 		rotateArray(arr, n, d);
 
