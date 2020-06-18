@@ -7,7 +7,9 @@ public class LR {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
-	    int n = Integer.parseInt(scan.nextLine());
+		System.out.print("Enter no. of characters");
+	    int n = scan.nextInt(); //scaning num of strings with nextInt
+	    
 	    String []s = new String[n];
 
 	    for(int i = 0; i<n ; i++) {
