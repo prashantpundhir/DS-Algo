@@ -25,12 +25,12 @@ public class ArrayRotateUsingReverse {
 
 	}
 
-	static void reverseArray(int arr[], int start, int end) {
+	static void reverseArray(int ar[], int start, int end) {
 		int temp = 0;
 		while (start < end) {
-			temp = arr[start];
-			arr[start] = arr[end];
-			arr[end] = temp;
+			temp = ar[start];
+			ar[start] = ar[end];
+			ar[end] = temp;
 			start++;
 			end--;
 		}
