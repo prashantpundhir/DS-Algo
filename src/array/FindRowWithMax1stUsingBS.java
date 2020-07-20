@@ -4,9 +4,9 @@ public class FindRowWithMax1stUsingBS {
 
 	public static void main(String[] args) {
 
-		int arr[][] = { { 0, 0, 0, 0 }, { 0, 0, 0, 1 }, { 0, 1, 1, 1 },
+		int arr[][] = { { 0, 0, 0, 0 }, { 0, 0, 0, 1 },{ 0, 0, 1, 1 }, { 1, 1, 1, 1 },
 
-				{ 0, 0, 1, 1 } };
+				{ 0, 1, 1, 1 } };
 
 		System.out.println("Row with max 1's using binary search is: " + findMax1s(arr));
 

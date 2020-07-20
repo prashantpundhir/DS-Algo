@@ -37,6 +37,7 @@ public class FunWithAnagrams {
 	List<String> a = Arrays.asList("code", "aaagmnrs", "anagrams", "doce");
 	System.out.println(funWithAnagrams(a));
 
+
 	}
 
 }
