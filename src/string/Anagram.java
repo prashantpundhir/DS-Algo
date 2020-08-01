@@ -1,5 +1,8 @@
 package string;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Anagram {
 
 	public static void main(String[] args) {
@@ -7,7 +10,9 @@ public class Anagram {
 
 		String s = "anagram";
 		String t = "nagaram";
-
+		
+		
+		
 		System.out.println("Is Anagram: " + isAnagram(s, t));
 
 		isAna(s, t);
