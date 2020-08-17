@@ -9,7 +9,7 @@ public class Count1sInBinarySortedArray {
 	}
 	
 	public static int count1s(int []arr) {
-		int c=0;
+	
 		int n =  arr.length-1;
 		int l=arr.length;
 		int i=0;
