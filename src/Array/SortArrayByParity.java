@@ -26,7 +26,6 @@ public class SortArrayByParity {
 			if (arr[j] % 2 == 1)
 				j--;
 		}
-
 		return arr;
 	}
 

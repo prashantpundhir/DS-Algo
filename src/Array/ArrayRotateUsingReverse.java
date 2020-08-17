@@ -5,7 +5,7 @@ public class ArrayRotateUsingReverse {
 	public static void main(String[] args) {
 		int arr[] = {-1,-100,3,99};
 		int n = arr.length;
-		int d = 2;
+		int d = 1;
 
 		rotateArray(arr, n, d);
 

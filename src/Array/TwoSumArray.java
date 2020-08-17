@@ -23,7 +23,7 @@ public class TwoSumArray {
 		for (int i = 0; i < nums.length; i++) {
 			int complement = target - nums[i];
 			if (mp.containsKey(complement)) {
-				return new int[] { mp.get(complement), i };
+				return new int[] { complement, nums[i]};
 			}
 			mp.put(nums[i], i);
 
