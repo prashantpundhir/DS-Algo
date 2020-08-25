@@ -26,54 +26,46 @@ public class LinkedList {
 		head = node;
 
 	}
-	
+
 	public void insertAtIndex(int index, int data) {
 		Node node = new Node();
-		node.data=data;
-		node.next=null;
-		
-		if(index==0)
+		node.data = data;
+		node.next = null;
+
+		if (index == 0)
 			insertAtStart(data);
-else
-		{	
-		Node n = head;
-		
-		for(int i=0;i<index-1;i++) {
-			n= n.next; 
+		else {
+			Node n = head;
+
+			for (int i = 0; i < index - 1; i++) {
+				n = n.next;
+			}
+
+			node.next = n.next;
+			n.next = node;
 		}
 
-		node.next = n.next;
-		n.next = node;
 	}
 
-	
-	}
-
-	
 	public void deleteAt(int index) {
-		if(index==0)
-			head=head.next;
+		if (index == 0)
+			head = head.next;
 		else {
-			Node n = head;	
+			Node n = head;
 			Node n1 = null;
-			for(int i=0;i<index-1;i++) {
+			for (int i = 0; i < index - 1; i++) {
 				n = n.next;
 			}
 			n1 = n.next;
-			n.next=n1.next;
-			
+			n.next = n1.next;
+
 			System.out.println("Deleted " + n1.data);
-			
-			n1=null;
-			
-			
-			
+
+			n1 = null;
+
 		}
 	}
-	
-	
-	
-	
+
 	public void show() {
 		Node node = head;
 		while (node.next != null) {
@@ -83,4 +75,21 @@ else
 		System.out.println(node.data);
 
 	}
+
+	public int findMid() {
+		if(head==null)
+			return -1;
+		
+			Node fast= head;
+			Node slow = head;
+			
+			while(fast!=null && fast.next!=null) {
+				fast= fast.next.next;
+				slow= slow.next;
+			}
+		
+		
+		return slow.data;
+	}
+
 }

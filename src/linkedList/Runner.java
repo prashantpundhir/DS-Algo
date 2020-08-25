@@ -17,9 +17,10 @@ public class Runner {
 		list.show();
 		list.insertAtIndex(0, 512);
 		list.show();
-		list.deleteAt(2);
+//		list.deleteAt(2);
 		
 		list.show();
+		System.out.println(list.findMid());
 	}
 
 }

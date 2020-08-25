@@ -13,6 +13,10 @@ public class BuyAndSellStock {
 		int price[] = { 40, 32, 56, 156, 21, 3, 72, 84, 6 };
 		int n = price.length;
 		stock.stockBuySell(price, n);
+		
+		
+		
+		
 
 	}
 
