@@ -21,6 +21,28 @@ public class Runner {
 		
 		list.show();
 		System.out.println(list.findMid());
+		
+		//to create loop remove // from below statement
+		//list.head.next.next.next.next = list.head;
+		 System.out.println("Head: " + list.head.data);
+		list.detectLoop();
+		
+		list.reverseLinkedList();
+		list.show();
+		
+		LinkedList li2 =new LinkedList();
+		li2.insert(1);
+		li2.insert(2);
+		li2.insert(3);
+		li2.insert(2);
+		li2.insert(1);
+		
+		System.out.println(li2.findPalindrome());
+		
+		list.rotateLinkedList(2);
+		list.show();
+		
+	
 	}
 
 }

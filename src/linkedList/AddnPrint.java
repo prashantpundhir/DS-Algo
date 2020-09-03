@@ -14,9 +14,12 @@ public class AddnPrint {
 		li.add(3);
 		li.add(5);
 		li.add(10);
+		li.add(55);
+		li.add(8);
 		
 		for(int i : li)
 			System.out.println(i);
+		System.out.println("Mid: " + li.get((li.size()-1)/2));
 		
 
 	}
