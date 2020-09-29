@@ -17,6 +17,8 @@ public class ValidPalidrome {
 		s=s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase(); 
 		int i=0,n =s.length()-1;
 		
+		System.out.println(s);
+		
 		while(i<n) {
 			
 			if(s.charAt(i)!=s.charAt(n))

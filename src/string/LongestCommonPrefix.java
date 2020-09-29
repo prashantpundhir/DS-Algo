@@ -23,6 +23,7 @@ public class LongestCommonPrefix {
 				prefix = prefix.substring(0, prefix.length() - 1);
 
 		}
+		
 
 		return prefix;
 

@@ -28,7 +28,7 @@ public class QuickSort {
 	static int partition(int a[], int l, int h) {
 
 		int i = l - 1;
-
+		
 		int pivot = a[h];
 
 		for (int j = l; j < h; j++) {

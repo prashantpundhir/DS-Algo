@@ -1,4 +1,5 @@
 package string;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -33,7 +34,6 @@ public class LongestSubstringLengthWithoutDuplicate {
 				set.remove(s.charAt(l));
 				l++;
 
-				
 			}
 		}
 
